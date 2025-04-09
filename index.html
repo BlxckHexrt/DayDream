@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayDream - Sitio Web</title>
-    <link rel="stylesheet" href="styles.css">
-    <!--Font de Letra-->
+    <link href="./styles.css" rel="stylesheet"/>
+    <!-- Letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Questrial&display=swap" rel="stylesheet">
@@ -13,73 +13,101 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./assets/images/apple.png"/>
-                <span>DayDream</span>
+    <header>
+        <div class="logo">
+            <span>DayDream</span>
+            <img src="./assets/images/apple.png"/>
+        </div>
+        <div class="header-buttons">
+            <a href="#" class="btn secondary-btn">Libros</a>
+            <a href="#" class="btn">Unirte</a>
+        </div>
+    </header>
+    
+    <div class="main-grid">
+        <div class="section about-section">
+            <div class="about-title">
+                <span>&#128218;</span>
+                <h2>Bienvenido a DayDream</h2>
             </div>
-            <div class="nav-buttons">
-                <button class="btn">Libros</button>
-                <button class="btn">Unirte</button>
+            <p>Tu rincón de lectura, imaginación y aventuras inolvidables.</p>
+            <br>
+            <a href="#" class="btn">Explorar Libros</a>
+        </div>
+        
+        <div class="section image-section image1-section">
+            <div class="placeholder-img">
+                <img src="./assets/images/daydream.jpg"/>
             </div>
         </div>
         
-        <div class="us">
-            <div class="us-title">
-                <span class="us-icon">&#128218;</span>
-                <h2>Nosotros</h2>
-            </div>
-            <div class="us-content">
-            </div>
-            <button class="btn">Unirte</button>
+        <div class="section products-section">
+            <h3>Libro Destacado<br/>
+                "La Profecía del Cuervo"</h3><br/>
+            <p>Cada año, la noche de San Marcos, Blue Sargent acompaña a su madre al camino de los espíritus para ver a los que morirán en los siguientes doce meses. Sin embargo, este año es distinto: Blue, la única de su familia que no tiene facultades adivinatorias, ha visto a uno de estos espíritus, y eso solo puede significar que es su amor verdadero o que lo va a matar.</p>
         </div>
         
-        <div class="info-section">
-
-        </div>
-        
-        <div class="image-placeholder"></div>
-        
-        <div class="rating">
-            <span class="star">★</span>
-            <span class="star">★</span>
-            <span class="star">★</span>
-        </div>
-        
-        <div class="cards-container">
-            <div class="card">
-                <div class="card-header">
-                    <div class="avatar"></div>
-                    <span>Ari ❤︎</span>
-                </div>
+        <div class="section image-section image2-section">
+            <div class="placeholder-img">
             </div>
-        </div>
-        
-        <div class="footer">
-            <div class="social-icons">
-                <button class="social-icon">
-                    <i class="bi bi-twitter-x"></i>
-                </button>
-                <button class="social-icon">
-                    <i class="bi bi-youtube"></i>
-                </button>
-                <button class="social-icon">
-                    <i class="bi bi-linkedin"></i>
-                </button>
-                <button class="social-icon">
-                    <i class="bi bi-instagram"></i>
-                </button>
-                <button class="social-icon">
-                    <i class="bi bi-facebook"></i>
-                </button>
-                <button class="social-icon">
-                    <i class="bi bi-tiktok"></i>
-                </button>
+            <div class="rating">
+                ★★★★☆
             </div>
-            <div class="copyright">Talca, 2025</div>
-            <a href="" class="developer-link">Ari ❤︎</a>
         </div>
     </div>
+    
+    <section class="team-section">
+        <h2>Nuestro Equipo</h2><br/>
+        <div class="team-cards">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <span>👤</span>
+                </div>
+                <h4>Aracely Recabarren</h4>
+                <p>Interfaz Gráfica</p>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">
+                    <span>👤</span>
+                </div>
+                <h4>Aracely Recabarren</h4>
+                <p>Interfaz Gráfica</p>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">
+                    <span>👤</span>
+                </div>
+                <h4>Aracely Recabarren</h4>
+                <p>Interfaz Gráfica</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="#">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-tiktok"></i>
+            </a>
+        </div>
+        <a href="#">Desarrollador</a>
+        <p class="copyright">© 2025</p>
+    </footer>
 </body>
 </html>
