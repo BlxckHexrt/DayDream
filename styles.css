@@ -13,11 +13,6 @@ body {
     background-color: rgb(95, 120, 95);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .btn {
     background-color: #3b3a49;
     color: white;
@@ -38,6 +33,7 @@ header {
     padding: 10px 0;
     border-bottom: 1px solid #000000;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -46,6 +42,7 @@ header {
     display: flex;
     align-items: center;
     color: white;
+    padding: 10px;
 }
 
 .logo img{
@@ -67,19 +64,20 @@ header {
 .main-grid {
     display: grid;
     grid-template-areas:
-        "image1 about "
+        "image1 welcome "
         "products image2";
     grid-template-columns: 1fr 1fr;
     margin-bottom: 30px;
 }
 
-.about-section {
-    grid-area: about;
+.welcome-section {
+    grid-area: welcome;
     background-color: #fff2e0;
     order: 2;
+    padding: 20px;
 }
 
-.about-title {
+.welcome-title {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -92,30 +90,44 @@ header {
     overflow: hidden;
 }
 
+.image1-section img{
+    max-width: 100%;
+    height: auto;
+}
+
 .products-section {
     grid-area: products;
     background-color: #e8f5e9;
     order: 3;
+    padding: 20px;
 }
 
 .image2-section {
     grid-area: image2;
     background-color: #f5f5f5;
     order: 4;
+    text-align: center;
+    font-size: 25px;
+}
+
+.image2-section img{
+    max-width: auto;
+    height: 90%;
+    border-radius: 5%;
 }
 
 /* Adaptación a móvil (1-2-3-4) */
 @media (max-width: 768px) {
     .main-grid {
         grid-template-areas:
-            "about"
+            "welcome"
             "image1"
             "products"
             "image2";
         grid-template-columns: 1fr;
     }
     
-    .about-section {
+    .welcome-section {
         order: 1;
     }
     
@@ -136,17 +148,8 @@ header {
     }
 }
 
-.section {
-    padding: 20px;
-}
-
-.image-section {
-    text-align: center;
-    padding: 20px 20px;
-}
-
 .placeholder-img {
-    background-color: #ddd;
+    background-color: #373856c9;
     width: 100%;
     height: 200px;
     display: flex;
@@ -184,6 +187,7 @@ header {
     border-radius: 8px;
     padding: 15px;
     background-color: #b8b8b8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .team-avatar {
@@ -219,4 +223,26 @@ footer {
     font-size: 0.8rem;
     color: #ffffff;
     margin-top: 10px;
+}
+
+/* Animación Sencilla */
+
+.welcome-section:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image1-section:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+.products-section:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image2-section:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
 }
