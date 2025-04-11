@@ -1,15 +1,15 @@
 # 📖 Evaluación N°1 "Librería DayDream"
 
-**DayDream** es una librería creada como parte de la evaluación N°1 para el Electivo III de Programación de Aplicaciones Web. 
+**DayDream** es una librería creada como parte de la Evaluación N°1 para el Electivo III de Programación de Aplicaciones Web. 
 
 ## ✨ Descripción
 
-Este sitio representa a una empresa ficticia del rubro literario. Incluye secciones como bienvenida, libros destacados, lanzamientos recientes y equipo. Se ha trabajado en un diseño amigable tanto para dispositivos de escritorio como móviles, siguiendo los criterios establecidos en la rúbrica de evaluación.
+Este sitio representa a una empresa ficticia del rubro literario. Incluye secciones como bienvenida, libros destacados, próximos lanzamientos y equipo de trabajo. Se ha trabajado en un diseño tanto para dispositivos de escritorio como móviles, siguiendo los criterios establecidos en la rúbrica de evaluación.
 
 ## 🛠️ Tecnologías Utilizadas
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - Google Fonts (`Questrial`, `DM Sans`)
 - Flexbox y Grid Layout
 - Media Queries para diseño responsivo
