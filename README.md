@@ -25,7 +25,7 @@ Este sitio representa a una empresa ficticia del rubro literario. Incluye seccio
 
 ## 🔗 Enlace al sitio
 
-> [🔗 Ver sitio en GitHub](https://github.com/BlxckHexrt/DayDream)
+> [🔗 Ver sitio web](https://blxckhexrt.github.io/DayDream/)
 
 ## 👩‍💻 Desarrolladora
 
